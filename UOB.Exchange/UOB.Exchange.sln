@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UOB.Exchange.Bitfinex", "UOB.Exchange.Bitfinex\UOB.Exchange.Bitfinex.csproj", "{5B04D0D8-400A-4942-B0AE-5F2CACC346DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UOB.TestConsole", "UOB.TestConsole\UOB.TestConsole.csproj", "{DCFC7F1B-79DF-4688-A6EB-F0D343B2CFC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UOB.Exchange.Bitfinex.Tests", "UOB.Exchange.Bitfinex.Tests\UOB.Exchange.Bitfinex.Tests.csproj", "{3C4E6D1A-F037-42B0-8D92-D6D871FE7187}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B04D0D8-400A-4942-B0AE-5F2CACC346DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B04D0D8-400A-4942-B0AE-5F2CACC346DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B04D0D8-400A-4942-B0AE-5F2CACC346DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B04D0D8-400A-4942-B0AE-5F2CACC346DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCFC7F1B-79DF-4688-A6EB-F0D343B2CFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCFC7F1B-79DF-4688-A6EB-F0D343B2CFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCFC7F1B-79DF-4688-A6EB-F0D343B2CFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCFC7F1B-79DF-4688-A6EB-F0D343B2CFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4E6D1A-F037-42B0-8D92-D6D871FE7187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4E6D1A-F037-42B0-8D92-D6D871FE7187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4E6D1A-F037-42B0-8D92-D6D871FE7187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4E6D1A-F037-42B0-8D92-D6D871FE7187}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4897B587-5712-4E40-A0F2-A56BF6F48A25}
+	EndGlobalSection
+EndGlobal

@@ -29,7 +29,9 @@ namespace UOB.Exchanges.Bitstamp
         /// <returns>Order list object, that contains timestamp, asks and bids lists (if there is an error - error info)</returns>
         public async Task<OrderList> GetOrderListByCurrencyPair(CurrencyPairs currencyPairs)
         {
-            var _response = await _httpClient.GetStringAsync(Helpers.GetOrderListUrl(currencyPairs));          
+            var _response = await _httpClient.GetStringAsync(Helpers.GetRequestUrl(Constants.API_V2_URL, 
+                                                                                    Constants.GET_ORDER_LIST_ACTION,
+                                                                                    currencyPairs.ToString()));          
             JObject _root = JObject.Parse(_response);
             var orderList = new OrderList
             {

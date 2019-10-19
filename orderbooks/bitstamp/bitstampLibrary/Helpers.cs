@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
+using System.Text;
 using UOB.Exchanges.Bitstamp.Models;
 
 namespace UOB.Exchanges.Bitstamp
@@ -21,22 +22,31 @@ namespace UOB.Exchanges.Bitstamp
             JArray _ordersAsListOfStrings = (JArray)root[listName];
             for (int i = 0; i < _ordersAsListOfStrings.Count; i++)
             {
-                JArray item = (JArray)_ordersAsListOfStrings[i];
-                var order = new Order { Amount = (string)item[0], Price = (string)item[1] };
-                _orders.Add(order);
+                JArray _item = (JArray)_ordersAsListOfStrings[i];
+                var _order = new Order { Amount = (string)_item[0], Price = (string)_item[1] };
+                _orders.Add(_order);
             }
             return _orders;
         }
 
         /// <summary>
-        /// Library, to make requests to Bitstamp rest api
+        /// Get url to make a request to REST api
         /// </summary>
-        /// <param name="currencyPairs">Currency pairs</param>
-        /// <returns>Url to get order list with specified currency pair</returns>
-        public static string GetOrderListUrl(CurrencyPairs currencyPairs)
+        /// <param name="apiUrl">Base api url (different versions could be)</param>
+        /// <param name="action">Action of the request</param>
+        /// <param name="parameters">Request parameters</param>
+        /// <returns>Url to make a request</returns>
+        public static string GetRequestUrl(string apiUrl, string action, params string[] parameters)
         {
-            var url = string.Format("{0}/{1}", Constants.GET_ORDER_LIST_URL, currencyPairs);
-            return url;
+            StringBuilder _builder = new StringBuilder(string.Format("{0}/{1}", apiUrl, action));
+            if (parameters.Length > 0)
+            {
+                foreach (var _param in parameters)
+                {
+                    _builder.Append(string.Format("/{0}", _param));
+                }
+            }
+            return _builder.ToString();
         }
     }
 }

@@ -1,5 +1,8 @@
 ﻿namespace UOB.Exchanges.Bitstamp
 {
+    /// <summary>
+    /// Class describes a list of constants
+    /// </summary>
     class Constants
     {
         /// <summary>
@@ -8,7 +11,7 @@
         public const string API_V2_URL = "https://www.bitstamp.net/api/v2";
 
         /// <summary>
-        /// Base url to get order list
+        /// Action to get order list
         /// </summary>
         public const string GET_ORDER_LIST_ACTION = "order_book";
 
@@ -41,5 +44,10 @@
         /// Timestamp key name
         /// </summary>
         public const string TIMESTAMP_KEY = "timestamp";
+
+        /// <summary>
+        /// Action to get list of currencies
+        /// </summary>
+        public const string GET_CURRENCY_LIST_ACTION = "trading-pairs-info";
     }
 }

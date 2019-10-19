@@ -5,7 +5,12 @@
         /// <summary>
         /// Base url to get order list
         /// </summary>
-        public const string GET_ORDER_LIST_URL = "https://www.bitstamp.net/api/v2/order_book";
+        public const string API_V2_URL = "https://www.bitstamp.net/api/v2";
+
+        /// <summary>
+        /// Base url to get order list
+        /// </summary>
+        public const string GET_ORDER_LIST_ACTION = "order_book";
 
         /// <summary>
         /// Asks list name

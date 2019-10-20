@@ -1,14 +1,17 @@
 ﻿namespace UOB.Exchanges.Bitstamp
 {
+    /// <summary>
+    /// Class contains a list of library constants
+    /// </summary>
     class Constants
     {
         /// <summary>
-        /// Base url to get order list
+        /// Base API v2 url
         /// </summary>
         public const string API_V2_URL = "https://www.bitstamp.net/api/v2";
 
         /// <summary>
-        /// Base url to get order list
+        /// Action to get order list
         /// </summary>
         public const string GET_ORDER_LIST_ACTION = "order_book";
 

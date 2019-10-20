@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using UOB.Exchanges.Bitstamp.Models;
@@ -43,6 +45,18 @@ namespace UOB.Exchanges.Bitstamp
                 Timestamp = _root[Constants.TIMESTAMP_KEY].ToString()
             };
             return _orderList;
+        }
+
+        /// <summary>
+        /// Async method to get list of all currency pairs
+        /// </summary>
+        /// <returns>List of trading pair objects</returns>
+        public async Task<List<TradingPair>> GetCurrencyPairs()
+        {
+            var _response = await _httpClient.GetStringAsync(Helpers.GetRequestUrl(Constants.API_V2_URL,
+                                                                                    Constants.GET_CURRENCY_LIST_ACTION));
+            var _tradingPairs = JsonConvert.DeserializeObject<List<TradingPair>>(_response);
+            return _tradingPairs;
         }
     }
 }

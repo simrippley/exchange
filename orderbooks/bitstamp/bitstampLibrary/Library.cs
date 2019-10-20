@@ -33,7 +33,7 @@ namespace UOB.Exchanges.Bitstamp
                                                                                     Constants.GET_ORDER_LIST_ACTION,
                                                                                     currencyPairs.ToString()));          
             JObject _root = JObject.Parse(_response);
-            var orderList = new OrderList
+            var _orderList = new OrderList
             {
                 Asks = Helpers.GetOrders(_root, Constants.ASKS_LIST_NAME),
                 Bids = Helpers.GetOrders(_root, Constants.BIDS_LIST_NAME),
@@ -42,7 +42,7 @@ namespace UOB.Exchanges.Bitstamp
                 Status = _root[Constants.STATUS_KEY]?.ToString(),
                 Timestamp = _root[Constants.TIMESTAMP_KEY].ToString()
             };
-            return orderList;
+            return _orderList;
         }
     }
 }

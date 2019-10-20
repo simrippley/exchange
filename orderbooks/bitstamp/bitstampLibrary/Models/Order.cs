@@ -11,7 +11,7 @@
         public string Price { get; set; }
 
         /// <summary>
-        /// Represents an order mount
+        /// Represents an order amount
         /// </summary>
         public string Amount { get; set; }
     }

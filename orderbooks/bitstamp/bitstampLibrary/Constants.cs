@@ -44,5 +44,10 @@
         /// Timestamp key name
         /// </summary>
         public const string TIMESTAMP_KEY = "timestamp";
+
+        /// <summary>
+        /// Action to get list of currencies
+        /// </summary>
+        public const string GET_CURRENCY_LIST_ACTION = "trading-pairs-info";
     }
 }

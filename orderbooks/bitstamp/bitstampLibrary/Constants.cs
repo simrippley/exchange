@@ -44,5 +44,50 @@
         /// Timestamp key name
         /// </summary>
         public const string TIMESTAMP_KEY = "timestamp";
+
+        /// <summary>
+        /// X-Auth header key
+        /// </summary>
+        public const string X_AUTH_HEADER_KEY = "X-Auth";
+
+        /// <summary>
+        /// Bitstamp value
+        /// </summary>
+        public const string BITSTAMP_VALUE = "BITSTAMP";
+
+        /// <summary>
+        /// X-Auth-Signature key
+        /// </summary>
+        public const string X_AUTH_SIGNATURE_KEY = "X-Auth-Signature";
+
+        /// <summary>
+        /// X-Auth-Nonce key
+        /// </summary>
+        public const string X_AUTH_NONCE_KEY = "X-Auth-Nonce";
+
+        /// <summary>
+        /// X-Auth-Timestamp key
+        /// </summary>
+        public const string X_AUTH_TIMESTAMP_KEY = "X-Auth-Timestamp";
+
+        /// <summary>
+        /// X-Auth-Version key
+        /// </summary>
+        public const string X_AUTH_VERSION_KEY = "X-Auth-Version";
+
+        /// <summary>
+        /// X-Auth-Version value
+        /// </summary>
+        public const string X_AUTH_VERSION_VALUE = "v2";
+
+        /// <summary>
+        /// Content-Type key
+        /// </summary>
+        public const string CONTENT_TYPE_KEY = "Content-Type";
+
+        /// <summary>
+        /// Content-Type value
+        /// </summary>
+        public const string CONTENT_TYPE_VALUE = "application/x-www-form-urlencoded";
     }
 }

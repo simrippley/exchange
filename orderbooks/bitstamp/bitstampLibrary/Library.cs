@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using UOB.Exchanges.Bitstamp.Models;
+using System.Collections.Generic;
 
 namespace UOB.Exchanges.Bitstamp
 {
@@ -15,7 +16,6 @@ namespace UOB.Exchanges.Bitstamp
     /// </summary>
     public class Library
     {
-
         /// <summary>
         /// Http client, helps to make requests
         /// </summary>
@@ -43,6 +43,26 @@ namespace UOB.Exchanges.Bitstamp
                 Timestamp = _root[Constants.TIMESTAMP_KEY].ToString()
             };
             return _orderList;
+        }
+
+        /// <summary>
+        /// Method to get headers to authenticate requests
+        /// </summary>
+        /// <param name="signatureMessage">Object, what contains different requests data</param>
+        /// <returns>Dictionary of headers to make auth request</returns>
+        public IDictionary<string, string> GetHeaders(SignatureMessage signatureMessage, string secretKey)
+        {
+            var _signature = Helpers.GetHmac256(signatureMessage.ToString(), secretKey);
+            var _headers = new Dictionary<string, string>
+            {
+                { Constants.X_AUTH_HEADER_KEY, string.Format("{0} {1}", Constants.BITSTAMP_VALUE, signatureMessage.ApiKey)},
+                { Constants.X_AUTH_SIGNATURE_KEY, _signature },
+                { Constants.X_AUTH_NONCE_KEY, signatureMessage.Nonce },
+                { Constants.X_AUTH_TIMESTAMP_KEY, signatureMessage.Timestamp },
+                { Constants.X_AUTH_VERSION_KEY, signatureMessage.AuthVersion },
+                { Constants.CONTENT_TYPE_KEY, signatureMessage.ContentType },
+            };
+            return _headers;
         }
     }
 }

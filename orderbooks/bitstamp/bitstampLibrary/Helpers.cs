@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using UOB.Exchanges.Bitstamp.Models;
+using System.Security.Cryptography;
+using System;
 
 namespace UOB.Exchanges.Bitstamp
 {
@@ -47,6 +49,22 @@ namespace UOB.Exchanges.Bitstamp
                 }
             }
             return _builder.ToString();
+        }
+
+        /// <summary>
+        /// Get signed string by apiSecret
+        /// </summary>
+        /// <param name="stringToSign">String, what must be signed</param>
+        /// <param name="apiSecret">App secret key, what is used for signing</param>
+        /// <returns>Get signed string</returns>
+        public static string GetHmac256(string stringToSign, string apiSecret)
+        {
+            ASCIIEncoding _encoding = new ASCIIEncoding();
+            byte[] _apiSecretBytes = _encoding.GetBytes(apiSecret);
+            byte[] _stringToSignBytes = _encoding.GetBytes(stringToSign);
+            HMACSHA256 cryptographer = new HMACSHA256(_apiSecretBytes);
+            byte[] _signedStringBytes = cryptographer.ComputeHash(_stringToSignBytes);
+            return BitConverter.ToString(_signedStringBytes).Replace("-", "").ToLower();
         }
     }
 }

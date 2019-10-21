@@ -55,15 +55,15 @@ namespace UOB.Exchanges.Bitstamp
         /// Get signed string by apiSecret
         /// </summary>
         /// <param name="stringToSign">String, what must be signed</param>
-        /// <param name="apiSecret">App secret key, what is used for signing</param>
-        /// <returns>Get signed string</returns>
-        public static string GetHmac256(string stringToSign, string apiSecret)
+        /// <param name="secretKey">App secret key, what is used for signing</param>
+        /// <returns>Signed string</returns>
+        public static string GetHmac256(string stringToSign, string secretKey)
         {
             ASCIIEncoding _encoding = new ASCIIEncoding();
-            byte[] _apiSecretBytes = _encoding.GetBytes(apiSecret);
+            byte[] _apiSecretBytes = _encoding.GetBytes(secretKey);
             byte[] _stringToSignBytes = _encoding.GetBytes(stringToSign);
-            HMACSHA256 cryptographer = new HMACSHA256(_apiSecretBytes);
-            byte[] _signedStringBytes = cryptographer.ComputeHash(_stringToSignBytes);
+            HMACSHA256 _cryptographer = new HMACSHA256(_apiSecretBytes);
+            byte[] _signedStringBytes = _cryptographer.ComputeHash(_stringToSignBytes);
             return BitConverter.ToString(_signedStringBytes).Replace("-", "").ToLower();
         }
     }

@@ -49,8 +49,9 @@ namespace UOB.Exchanges.Bitstamp
         /// Method to get headers to authenticate requests
         /// </summary>
         /// <param name="signatureMessage">Object, what contains different requests data</param>
+        /// /// <param name="secretKey">App secret key to sign message</param>
         /// <returns>Dictionary of headers to make auth request</returns>
-        public async Task<IDictionary<string, string>> GetHeaders(SignatureMessage signatureMessage, string secretKey)
+        private async Task<IDictionary<string, string>> GetHeaders(SignatureMessage signatureMessage, string secretKey)
         {
             var task = await Task.Run(() =>
             {

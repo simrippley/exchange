@@ -4,6 +4,8 @@ using System.Text;
 using UOB.Exchanges.Bitstamp.Models;
 using System.Security.Cryptography;
 using System;
+using System.Linq;
+using System.Configuration;
 
 namespace UOB.Exchanges.Bitstamp
 {
@@ -57,14 +59,30 @@ namespace UOB.Exchanges.Bitstamp
         /// <param name="stringToSign">String, what must be signed</param>
         /// <param name="secretKey">App secret key, what is used for signing</param>
         /// <returns>Signed string</returns>
-        public static string GetHmac256(string stringToSign, string secretKey)
+        public static string GetHmac256(string stringToSign)
         {
             ASCIIEncoding _encoding = new ASCIIEncoding();
-            byte[] _apiSecretBytes = _encoding.GetBytes(secretKey);
+            var _secretKey = ConfigurationManager.AppSettings["secretKey"];
+            byte[] _apiSecretBytes = _encoding.GetBytes(_secretKey);
             byte[] _stringToSignBytes = _encoding.GetBytes(stringToSign);
             HMACSHA256 _cryptographer = new HMACSHA256(_apiSecretBytes);
             byte[] _signedStringBytes = _cryptographer.ComputeHash(_stringToSignBytes);
             return BitConverter.ToString(_signedStringBytes).Replace("-", "").ToLower();
+        }
+
+
+        public static string GetTimestamp()
+        {
+            return DateTimeOffset.Now.ToUnixTimeMilliseconds().ToString();
+        }
+
+        public static string GetNonce()
+        {
+            var _length = 36;
+            Random _random = new Random();
+            const string _chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+            return new string(Enumerable.Repeat(_chars, _length)
+              .Select(s => s[_random.Next(s.Length)]).ToArray());
         }
     }
 }

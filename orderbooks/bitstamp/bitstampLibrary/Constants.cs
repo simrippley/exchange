@@ -94,5 +94,15 @@
         /// Host
         /// </summary>
         public const string HOST = "www.bitstamp.net";
+
+        /// <summary>
+        /// Secret key
+        /// </summary>
+        public const string SECRET_KEY = "secretKey";
+
+        /// <summary>
+        /// List of all symbols and numbers
+        /// </summary>
+        public const string ALL_SYMBOLS = "abcdefghijklmnopqrstuvwxyz0123456789";
     }
 }

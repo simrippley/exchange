@@ -61,7 +61,7 @@ namespace UOB.Exchanges.Bitstamp
         public static string GetHmac256(string stringToSign)
         {
             ASCIIEncoding _encoding = new ASCIIEncoding();
-            var _secretKey = ConfigurationManager.AppSettings["secretKey"];
+            var _secretKey = ConfigurationManager.AppSettings[Constants.SECRET_KEY];
             byte[] _apiSecretBytes = _encoding.GetBytes(_secretKey);
             byte[] _stringToSignBytes = _encoding.GetBytes(stringToSign);
             HMACSHA256 _cryptographer = new HMACSHA256(_apiSecretBytes);
@@ -84,10 +84,10 @@ namespace UOB.Exchanges.Bitstamp
         /// <returns>Nonce value/returns>
         public static string GetNonce()
         {
-            var _length = 36;
+            var _charsLength = 36;
             Random _random = new Random();
-            const string _chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-            return new string(Enumerable.Repeat(_chars, _length)
+            const string _chars = Constants.ALL_SYMBOLS;
+            return new string(Enumerable.Repeat(_chars, _charsLength)
               .Select(s => s[_random.Next(s.Length)]).ToArray());
         }
     }

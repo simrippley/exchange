@@ -89,5 +89,10 @@
         /// Content-Type value
         /// </summary>
         public const string CONTENT_TYPE_VALUE = "application/x-www-form-urlencoded";
+
+        /// <summary>
+        /// Host
+        /// </summary>
+        public const string HOST = "www.bitstamp.net";
     }
 }

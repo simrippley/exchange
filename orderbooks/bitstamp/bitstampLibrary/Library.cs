@@ -2,7 +2,6 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using UOB.Exchanges.Bitstamp.Models;
-using System.Collections.Generic;
 using UOB.Exchanges.Bitstamp.Builders;
 
 namespace UOB.Exchanges.Bitstamp

@@ -54,10 +54,9 @@ namespace UOB.Exchanges.Bitstamp
         }
 
         /// <summary>
-        /// Get signed string by apiSecret
+        /// Get signature
         /// </summary>
         /// <param name="stringToSign">String, what must be signed</param>
-        /// <param name="secretKey">App secret key, what is used for signing</param>
         /// <returns>Signed string</returns>
         public static string GetHmac256(string stringToSign)
         {
@@ -70,12 +69,19 @@ namespace UOB.Exchanges.Bitstamp
             return BitConverter.ToString(_signedStringBytes).Replace("-", "").ToLower();
         }
 
-
+        /// <summary>
+        /// Get current timestamp
+        /// </summary>
+        /// <returns>Current timestamp value/returns>
         public static string GetTimestamp()
         {
             return DateTimeOffset.Now.ToUnixTimeMilliseconds().ToString();
         }
 
+        /// <summary>
+        /// Get nonce
+        /// </summary>
+        /// <returns>Nonce value/returns>
         public static string GetNonce()
         {
             var _length = 36;

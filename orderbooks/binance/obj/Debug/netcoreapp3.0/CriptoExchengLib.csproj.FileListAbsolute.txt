@@ -1,0 +1,17 @@
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\CriptoExchengLib.exe
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp3.0\CriptoExchengLib.AssemblyInfoInputs.cache
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp3.0\CriptoExchengLib.AssemblyInfo.cs
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\CriptoExchengLib.deps.json
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\CriptoExchengLib.runtimeconfig.json
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\CriptoExchengLib.runtimeconfig.dev.json
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\CriptoExchengLib.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\CriptoExchengLib.pdb
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\Nancy.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp3.0\CriptoExchengLib.csproj.CopyComplete
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp3.0\CriptoExchengLib.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp3.0\CriptoExchengLib.pdb
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp3.0\CriptoExchengLib.csprojAssemblyReference.cache

@@ -1,0 +1,10 @@
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp2.0\CriptoExchengLib.csprojAssemblyReference.cache
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp2.0\CriptoExchengLib.AssemblyInfoInputs.cache
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp2.0\CriptoExchengLib.AssemblyInfo.cs
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp2.0\CriptoExchengLib.deps.json
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp2.0\CriptoExchengLib.runtimeconfig.json
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp2.0\CriptoExchengLib.runtimeconfig.dev.json
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp2.0\CriptoExchengLib.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\bin\Debug\netcoreapp2.0\CriptoExchengLib.pdb
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp2.0\CriptoExchengLib.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\CriptoExchengLib\obj\Debug\netcoreapp2.0\CriptoExchengLib.pdb

@@ -1,0 +1,13 @@
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\bin\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.deps.json
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\bin\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.runtimeconfig.json
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\bin\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.runtimeconfig.dev.json
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\bin\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\bin\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.pdb
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\bin\Debug\netcoreapp2.0\CriptoExchengLib.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\bin\Debug\netcoreapp2.0\CriptoExchengLib.pdb
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\obj\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.csprojAssemblyReference.cache
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\obj\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.AssemblyInfoInputs.cache
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\obj\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.AssemblyInfo.cs
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\obj\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.csproj.CopyComplete
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\obj\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.dll
+C:\Users\andrii\source\repos\CriptoExchengLib\KrakenCryptoExchengeExample\obj\Debug\netcoreapp2.0\KrakenCryptoExchengeExample.pdb
